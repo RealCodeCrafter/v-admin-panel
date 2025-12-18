@@ -1,0 +1,132 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: rgb(46, 46, 46) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px 50px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    
+    .title {
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        color: #9ca3af;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .form {
+        .input-group {
+            text-align: left;
+            margin-bottom: 20px;
+
+            label {
+                color: #d1d5db;
+                font-size: 14px;
+                margin-bottom: 6px;
+                display: block;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px 15px 12px 10px;
+                background: transparent !important;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: white;
+                font-size: 15px;
+                transition: 0.3s;
+                outline: none;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #3b82f6;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: 600;
+
+            &:hover {
+                background: #2563eb;
+            }
+        }
+    }
+
+    .password-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 0px 10px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        transition: 0.3s;
+
+        svg {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            border: none !important;
+            background: transparent !important;
+            outline: none;
+        }
+    }
+}
+
+.extra-row {
+    padding: 0px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .checkbox {
+        display: flex;
+        gap: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+
+        input {
+            cursor: pointer;
+        }
+    }
+
+    .forgot {
+        font-size: 16px;
+        color: #3b82f6;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

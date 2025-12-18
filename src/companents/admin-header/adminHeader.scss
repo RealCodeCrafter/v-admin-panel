@@ -1,0 +1,132 @@
+.products__top {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: space-between;
+  padding: 22px 25px;
+
+  &-btns {
+    border: none;
+    background-color: transparent;
+
+    svg {
+      color: white !important;
+      font-size: 24px;
+    }
+  }
+
+  &__right-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 0px 10px 0px 5px;
+
+    svg {
+      color: black;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      padding: 8px;
+      width: 300px;
+    }
+  }
+
+  &__right-mode-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      color: white !important;
+      font-size: 22px;
+    }
+  }
+
+  &__right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-profile-btn {
+      border: 1px solid gray;
+      background-color: white !important;
+      padding: 6px 8px;
+      border-radius: 50%;
+
+      svg {
+        color: black !important;
+        font-size: 14px;
+      }
+    }
+
+    &-profile-title {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: .8px;
+      color: white;
+    }
+  }
+
+  .search-result {
+    position: absolute;
+    background: white;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    top: 40px;
+    z-index: 999;
+    box-shadow: 1px 1px 10px #aaa8;
+    padding: 10px;
+
+    &-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0px;
+      border-bottom: 1px solid #aaa4;
+
+      &-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      &-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+  }
+
+  .search-item {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .search-item:hover {
+    background: #f2f2f2;
+  }
+
+
+}
